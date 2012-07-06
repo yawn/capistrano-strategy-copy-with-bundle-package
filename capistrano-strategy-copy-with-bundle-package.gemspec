@@ -25,5 +25,5 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_runtime_dependency 'capistrano', '~> 2'
-  s.add_runtime_dependency 'bundle', '~> 1.2.0.pre'
+  s.add_runtime_dependency 'bundler', '>= 1.2.0.pre.1'
 end
