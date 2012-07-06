@@ -13,7 +13,7 @@ module Capistrano
         private
 
         def bundle_package(directory)
-          cmd = "#{fetch(:bundle_cmd, 'bundle')} package"
+          cmd = "#{fetch(:bundle_cmd, 'bundle')} package --all"
 
           Dir.chdir(directory) do
             defined?(Bundler) ? with_original_env { system(cmd) } : system(cmd)
